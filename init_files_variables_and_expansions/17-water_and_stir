@@ -1,0 +1,2 @@
+#!/bin/bash
+echo "obase=16; ibase=10; $((10#$(echo "$WATER" | tr 'water' '01234') + 10#$(echo "$STIR" | tr 'stir.' '01234')))" | tr '0123456789ABCDEF' 'bestchol'
